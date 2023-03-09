@@ -1,7 +1,6 @@
-package bm.interview;
+package bm.inter;
 
 import java.math.BigDecimal;
-import java.security.SecureRandom;
 
 public final class BigDecTest {
 

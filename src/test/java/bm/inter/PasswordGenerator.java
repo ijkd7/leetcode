@@ -1,12 +1,10 @@
-package bm.interview;
+package bm.inter;
 
 import java.security.SecureRandom;
-import java.util.Collections;
-import java.util.Map;
 
 public final class PasswordGenerator {
 
-    private static final String CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+    private static final String CHARS = "abcdef";
     private static final SecureRandom SECURE_RANDOM = new SecureRandom();
 
     public static String generate(int length) {
