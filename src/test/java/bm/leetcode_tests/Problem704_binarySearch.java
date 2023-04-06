@@ -14,18 +14,23 @@ class Problem704_binarySearch {
 
     }
 
-    public int search(int[] nums, int target) {
-        if (nums.length == 1) return 0;
+    @Test
+    void example2() {
+        var in = new int[]{5};
+        Assertions.assertEquals(-1, search(in, -5));
 
+    }
+
+    public int search(int[] nums, int target) {
         var l = 0;
         var r = nums.length - 1;
 
         while(l <= r) {
             var m = l + ((r - l) / 2);
             if (nums[m] < target) {
-                l = m;
+                l = m + 1;
             } else if (nums[m] > target) {
-                r = m;
+                r = m - 1;
             } else {
                 return m;
             }
