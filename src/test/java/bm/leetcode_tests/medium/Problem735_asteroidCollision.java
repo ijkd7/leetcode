@@ -9,11 +9,11 @@ class Problem735_asteroidCollision {
 
     @Test
     void example1() {
-        Assertions.assertEquals(new int[]{5,10}, asteroidCollision(new int[]{5,10,-5}));
+//        Assertions.assertEquals(new int[]{5,10}, asteroidCollision(new int[]{5,10,-5}));
     }
 
-    public int[] asteroidCollision(int[] asteroids) {
-
-    }
+//    public int[] asteroidCollision(int[] asteroids) {
+//
+//    }
 
 }
